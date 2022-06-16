@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
-Route::get('/login', function () {
+})->name('index');
+Route::get('login', function () {
     return view('login');
-});
+})->name('login');
+Route::get('subscribe', function () {
+    return view('subscribe');
+})->name('subscribe');

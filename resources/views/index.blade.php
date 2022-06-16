@@ -1,68 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.master')
+@section('title')
+    Light Spot Pvt. Ltd.
+@endsection
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Light Spot Pvt. Ltd.</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-    <!-- Favicons -->
-    <link href="" rel="icon">
-    <link href="" rel="apple-touch-icon">
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
-    <!-- Vendor CSS Files -->
-    <link href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-    <!-- Template Main CSS File -->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-
-<body>
-    <!-- ======= Top Bar ======= -->
-    <section id="topbar" class="d-flex align-items-center">
-        <div class="container d-flex justify-content-center justify-content-md-between">
-            <div class="contact-info d-flex align-items-center"> <i class="bi bi-envelope-fill"></i><a
-                    href="mailto:contact@example.com">info@lightspot.com</a> <i class="bi bi-phone-fill phone-icon"></i>
-                +91-9899000000 </div>
-            <div class="social-links d-none d-md-block"> <a href="#" class="twitter"><i
-                        class="bi bi-twitter"></i></a> <a href="#" class="facebook"><i
-                        class="bi bi-facebook"></i></a> <a href="#" class="instagram"><i
-                        class="bi bi-instagram"></i></a> <a href="#" class="linkedin"><i
-                        class="bi bi-linkedin"></i></i></a> </div>
-        </div>
-    </section>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center">
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""
-                    class="img-fluid"></a>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#courses">Courses</a></li>
-                    <li><a class="nav-link scrollto" href="login.php">Login</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="subscribe.php">subscribe</a></li>
-                    <li style="margin-left:50px;">
-                        <a href="#" class="logo me-auto"><img src="assets/img/logo-1.jpg" alt=""
-                                class="img-fluid"></a>
-                    </li>
-                </ul> <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
-        </div>
-    </header>
-    <!-- End Header -->
+@section('main')
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -160,12 +101,10 @@
                         covers CBSE, ICSE, Goa, Tripura, Meghalaya, Mizoram, Nagaland, JEE and NEET.</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in"
-                        data-aos-delay="100">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box iconbox-blue">
                             <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke="none" stroke-width="0" fill="#f5f5f5"
                                         d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
                                     </path>
@@ -179,8 +118,7 @@
                         data-aos-delay="200">
                         <div class="icon-box iconbox-orange ">
                             <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke="none" stroke-width="0" fill="#f5f5f5"
                                         d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
                                     </path>
@@ -303,13 +241,11 @@
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="name">Your Name</label>
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        required>
+                                    <input type="text" name="name" class="form-control" id="name" required>
                                 </div>
                                 <div class="form-group col-md-6 mt-3 mt-md-0">
                                     <label for="name">Your Email</label>
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        required>
+                                    <input type="email" class="form-control" name="email" id="email" required>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
@@ -336,25 +272,4 @@
         <!-- End Contact Section -->
     </main>
     <!-- End #main -->
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <div class="copyright"> &copy; Copyright <strong><span>Light Spot Pvt. Ltd.</span></strong>. All Rights
-                Reserved </div>
-            <div class="credits">Designed by <a href="#">Redox Systems</a> </div>
-        </div>
-    </footer>
-    <!-- End Footer --><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-    <!-- Vendor JS Files -->
-    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
-    <!-- Template Main JS File -->
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-
-</body>
-
-</html>
+@endsection
